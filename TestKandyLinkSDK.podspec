@@ -40,6 +40,11 @@ TODO: Add long description of the pod here.
       'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
       'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+      
   }
   # s.resource_bundles = {
   #   'TestKandyLinkSDK' => ['TestKandyLinkSDK/Assets/*.png']
