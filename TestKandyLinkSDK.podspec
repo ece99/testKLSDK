@@ -26,6 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ece99' => 'eceserver.ayvaz@gmail.com' }
   s.source           = { :git => 'https://github.com/ece99/testKLSDK.git', :tag => '0.1.0' }
+  s.summary           = 'Kandy Link MobileSDK Framework'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
@@ -40,11 +41,6 @@ TODO: Add long description of the pod here.
       'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
       'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-      
   }
   # s.resource_bundles = {
   #   'TestKandyLinkSDK' => ['TestKandyLinkSDK/Assets/*.png']
