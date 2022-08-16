@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   
   s.dependency  'KandyWebRTC'
   s.library = ['c++','icucore','z']
-  s.ios.frameworks = 'AVFounndation','GLKit','VideoToolbox','AudioToolbox','PushKit', 'SystemConfiguration'
+  s.ios.frameworks = 'AVFoundation','GLKit','VideoToolbox','AudioToolbox','PushKit', 'SystemConfiguration'
   s.vendored_frameworks = ['MobileSDK.xcframework']
   
   s.pod_target_xcconfig = {
