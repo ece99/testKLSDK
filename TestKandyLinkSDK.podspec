@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.vendored_frameworks = ['MobileSDK.xcframework']
   
   s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
       'ENABLE_BITCODE' => 'NO',
       'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
